@@ -2,41 +2,41 @@ export const bodyParts = [
   {
     id: 'cardio',
     name: 'Cardio',
-    image: require('../assets/excercises/cardio.png')
+    image: 'https://res.cloudinary.com/dioktys56/image/upload/v1717468038/fitness-app/exercise_images/cardio.webp'
   },
   {
     id: 'back',
     name: 'Back',
-    image: require('../assets/excercises/back.png')
+    image: 'https://res.cloudinary.com/dioktys56/image/upload/v1717468038/fitness-app/exercise_images/back.webp'
   },
   {
     id: 'chest',
     name: 'Chest',
-    image: require('../assets/excercises/chest.png')
+    image: 'https://res.cloudinary.com/dioktys56/image/upload/v1717468038/fitness-app/exercise_images/chest.jpg'
   },
   {
     id: 'shoulders',
     name: 'Shoulders',
-    image: require('../assets/excercises/shoulders.png')
+    image: 'https://res.cloudinary.com/dioktys56/image/upload/v1717468038/fitness-app/exercise_images/shoulders.jpg'
   },
   {
     id: 'lowerArms',
     name: 'Lower Arms',
-    image: require('../assets/excercises/lowerArms.png')
+    image: 'https://res.cloudinary.com/dioktys56/image/upload/v1717468038/fitness-app/exercise_images/lowerArms.jpg'
   },
   { 
     id: 'upperArms',
     name: 'Upper Arms',
-    image: require('../assets/excercises/upperArms.png')
+    image: 'https://res.cloudinary.com/dioktys56/image/upload/v1717468038/fitness-app/exercise_images/upperArms.webp'
   },
   {
     id: 'lowerLegs',
     name: 'Lower Legs',
-    image: require('../assets/excercises/lowerLegs.png')
+    image: 'https://res.cloudinary.com/dioktys56/image/upload/v1717468037/fitness-app/exercise_images/lowerLegs.jpg'
   },
   {
     id: 'upperLegs',
     name: 'Upper Legs',
-    image: require('../assets/excercises/upperLegs.png')
+    image: 'https://res.cloudinary.com/dioktys56/image/upload/v1717468037/fitness-app/exercise_images/upperLegs.jpg'
   }
 ]

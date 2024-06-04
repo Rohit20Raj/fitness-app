@@ -1,7 +1,7 @@
 export default sliderImages = [
-  require('@/assets/image_1.png'),
-  require('@/assets/image_2.png'),
-  require('@/assets/image_3.png'),
-  require('@/assets/image_4.png'),
-  require('@/assets/image_5.png'),
+  'https://res.cloudinary.com/dioktys56/image/upload/v1717413897/fitness-app/slider_images/image_1.jpg',
+  'https://res.cloudinary.com/dioktys56/image/upload/v1717413897/fitness-app/slider_images/image_2.webp',
+  'https://res.cloudinary.com/dioktys56/image/upload/v1717413896/fitness-app/slider_images/image_3.jpg',
+  'https://res.cloudinary.com/dioktys56/image/upload/v1717413896/fitness-app/slider_images/image_4.jpg',
+  'https://res.cloudinary.com/dioktys56/image/upload/v1717413895/fitness-app/slider_images/image_5.webp',
 ]

@@ -66,7 +66,7 @@ const ExcerciseCard = ({item, router, index}) => {
         entering={FadeInUp.delay(125*((index+1)/2)).springify()}
       >
         <Image
-          source={imgUri}
+          source={{uri: imgUri}}
           resizeMode='cover'
           style={{
             width: imgWidth,
@@ -74,7 +74,7 @@ const ExcerciseCard = ({item, router, index}) => {
           }}
         />
         <LinearGradient
-          colors={["transparent", "rgba(33,33,33,0.8)"]}
+          colors={["transparent", "rgba(33,33,33,0.7)"]}
           start={{ x: 0.5, y: 0 }}
           end={{ x: 0.5, y: 0.8 }}
           style={{

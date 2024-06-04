@@ -15,7 +15,7 @@ export default function Index() {
     <View>
       <StatusBar hidden />
       <Image
-        source={require("@/assets/Welcome_Page.png")}
+        source={{uri: 'https://res.cloudinary.com/dioktys56/image/upload/v1717413780/fitness-app/Welcome_Page.jpg'}}
         style={{
           height: windowHeight,
           width: windowWidth,

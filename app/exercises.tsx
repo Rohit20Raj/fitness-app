@@ -29,6 +29,8 @@ const Exercises = () => {
   const bannerImage = item.image;
   const bodyPart = item.id;
 
+  // console.log(bannerImage);
+
   const loadJSON = async (muscle) => {
     try {
       const jsonData = jsonFiles[muscle];
@@ -56,8 +58,8 @@ const Exercises = () => {
         <Ionicons name="arrow-back-outline" size={40} color="rgba(244,63,94,1)" />
       </TouchableOpacity>
       <Image
-        source={bannerImage}
-        // resizeMode='contain'
+        source={{uri: bannerImage}}
+        // resizeMode='cover'
         style={{
           width: windowWidth,
           height: windowHeight/3,

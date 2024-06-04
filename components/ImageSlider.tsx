@@ -23,7 +23,7 @@ const ImageSlider = () => {
 const ItemCard = ({imgUri}) => {
   return (
     <Image
-      source={imgUri}
+      source={{uri: imgUri}}
       style={{
         width: windowWidth-20,
         height: 200,
