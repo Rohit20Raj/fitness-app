@@ -1,4 +1,4 @@
-import { View, Text, TouchableOpacity } from "react-native";
+import { View, Text, TouchableOpacity, Image } from "react-native";
 import React from "react";
 import ImageSlider from "@/components/ImageSlider";
 import BodyParts from "@/components/BodyParts";
@@ -23,19 +23,45 @@ const Home = () => {
       </TouchableOpacity> */}
       <Animated.View
         entering={FadeInLeft.delay(100).springify()}
-        style={{ marginLeft: 10 }}
+        style={{ marginLeft: 10, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}
       >
-        <Text style={{ fontSize: 40, fontWeight: 800, marginTop: 0 }}>
-          READY TO
-        </Text>
-        <Text
-          style={{ fontSize: 40, fontWeight: 800, color: "rgba(244,63,94,1)" }}
-        >
-          WORKOUT
-        </Text>
+        <View>
+          <Text style={{ fontSize: 35, fontWeight: 800, marginTop: 30 }}>
+            READY TO
+          </Text>
+          <Text
+            style={{ fontSize: 35, fontWeight: 800, color: "rgba(244,63,94,1)" }}
+          >
+            WORKOUT
+          </Text>
+        </View>
+        <TouchableOpacity onPress={()=>router.navigate('profile')} style={{
+          flexDirection: 'column',
+          // borderWidth: 1,
+          // height: 100,
+          marginTop: 20,
+          marginRight: 10,
+          overflow: 'hidden',
+          // justifyContent: 'center',
+          alignItems: 'center'
+        }}>
+          <Image
+            source={require('../assets/profileImages/profile_default_avatar.jpg')}
+            style={{
+              borderRadius: 100,
+              height: 80,
+              width: 80,
+              // transform: [{scale: 1.3}]
+            }}
+          />
+          <Text style={{color: 'rgba(255,140,0,1)', textDecorationLine: 'underline'}}>Edit your profile</Text>
+        </TouchableOpacity>
       </Animated.View>
       <Animated.View 
         // entering={FadeInUp.delay(100).springify()}
+        style={{
+          marginTop: 20
+        }}
       >
         <ImageSlider />
       </Animated.View>
